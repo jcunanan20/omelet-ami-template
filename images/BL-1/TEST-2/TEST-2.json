@@ -5,7 +5,8 @@
     "source_ami": "",
     "region": "",
     "ami_name": "",
-    "cookbook_path": ""
+    "cookbook_path": "",
+    "source_ami_name": "CentOS 6.5 (x86_64) - Auth"
   },
   "builders": [{
     "type": "amazon-ebs",

@@ -5,6 +5,7 @@
     "source_ami": "",
     "region": "",
     "ami_name": "",
+    "shell_path": "",
     "source_ami_name": "ubuntu/images/ebs/ubuntu-trusty-14.04-amd64-server-20140416.1"
   },
   "builders": [{
@@ -15,10 +16,10 @@
     "source_ami": "{{user `source_ami`}}",
     "instance_type": "t1.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "{{user `ami_name`}}",
+    "ami_name": "{{user `ami_name`}}"
   }],
   "provisioners": [{
     "type": "shell",
-    "script": "step1.sh"
+    "script": "{{user `shell_path`}}/basic.sh"
   }]
 }
