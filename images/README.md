@@ -74,7 +74,7 @@ Omelet AMI Template Images
 
 - Example:
     - [Test-shell.json](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/images/BL-1/TEST-shell/TEST-shell.json) 
-    - [Test-shell script](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/shell/TEST-1/basic.sh)                    
+    - [Test-shell script](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/shell/TEST-shell/basic.sh) 
 
 
 ## How to use Packer to debug recipes temporary: 
