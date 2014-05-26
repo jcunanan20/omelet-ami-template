@@ -2,7 +2,8 @@ Omelet AMI Template Images
 =================== 
 
 ## Omelet AMI Template with [Chef](http://www.getchef.com/chef/)
-- Two paramaters are needed in the template: 
+- Three paramaters are needed in the template: 
+    - (string) builders->ssh_username
     - (string) variables->source_ami_name
     - (list) provisioners->run_list
 
@@ -24,13 +25,13 @@ Omelet AMI Template Images
     "region": "{{user `region`}}",
     "source_ami": "{{user `source_ami`}}",
     "instance_type": "t1.micro",
-    "ssh_username": "root",
+    "ssh_username": "[ssh username]",
     "ami_name": "{{user `ami_name`}}"
   }],
   "provisioners": [{
     "type": "chef-solo",
     "cookbook_paths": ["{{user `cookbook_path`}}"],
-    "run_list": [put_your_run_list_here]
+    "run_list": [put_your_run_list_here, ...]
   }]
 }
 ```
@@ -40,7 +41,8 @@ Omelet AMI Template Images
     - [TEST-chef recipes](https://github.com/TrendMicroDCS/omelet-ami-template/tree/master/cookbooks/TEST-chef) 
 
 ## Omelet AMI Template with Shell
-- Two paramaters are needed in the template: 
+- Three paramaters are needed in the template: 
+    - (string) builders->ssh_username
     - (string) variables->source_ami_name
     - (string) provisioners->script->$script_name.sh
 
@@ -62,7 +64,7 @@ Omelet AMI Template Images
     "region": "{{user `region`}}",
     "source_ami": "{{user `source_ami`}}",
     "instance_type": "t1.micro",
-    "ssh_username": "ubuntu",
+    "ssh_username": "[ssh username]",
     "ami_name": "{{user `ami_name`}}"
   }],
   "provisioners": [{
