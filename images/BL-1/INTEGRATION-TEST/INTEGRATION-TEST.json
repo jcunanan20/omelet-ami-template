@@ -1,0 +1,21 @@
+{
+  "variables": {
+    "aws_access_key": "",
+    "aws_secret_key": "",
+    "source_ami": "",
+    "region": "",
+    "ami_name": "",
+    "shell_path": "",
+    "source_ami_name": "ubuntu/images/ebs/ubuntu-trusty-14.04-amd64-server-20140416.1"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "{{user `region`}}",
+    "source_ami": "{{user `source_ami`}}",
+    "instance_type": "t1.micro",
+    "ssh_username": "ubuntu",
+    "ami_name": "{{user `ami_name`}}"
+  }]
+}
