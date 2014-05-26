@@ -6,6 +6,7 @@ Omelet AMI Template Images
     - (string) variables->source_ami_name
     - (list) provisioners->run_list
 
+```
 {
   "variables": {
     "aws_access_key": "",
@@ -32,6 +33,7 @@ Omelet AMI Template Images
     "run_list": [put_your_run_list_here]
   }]
 }
+```
 
 - Example: 
     - [TEST-chef.json](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/images/BL-1/TEST-chef/TEST-chef.json) 
@@ -41,6 +43,8 @@ Omelet AMI Template Images
 - Two paramaters are needed in the template: 
     - (string) variables->source_ami_name
     - (string) provisioners->script->$script_name.sh
+
+```
 {
   "variables": {
     "aws_access_key": "",
@@ -66,6 +70,7 @@ Omelet AMI Template Images
     "script": "{{user `shell_path`}}/basic.sh"
   }]
 }
+```
 
 - Example:
     - [Test-shell.json](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/images/BL-1/TEST-shell/TEST-shell.json) 
