@@ -16,7 +16,7 @@ Omelet AMI Template Images
     "region": "",
     "ami_name": "",
     "cookbook_path": "",
-    "source_ami_name": "[Source Name]"
+    "source_ami_name": "[source ami name]"
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -55,7 +55,7 @@ Omelet AMI Template Images
     "region": "",
     "ami_name": "",
     "shell_path": "",
-    "source_ami_name": "ubuntu/images/ebs/ubuntu-trusty-14.04-amd64-server-20140416.1"
+    "source_ami_name": "[source ami name]"
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -69,7 +69,7 @@ Omelet AMI Template Images
   }],
   "provisioners": [{
     "type": "shell",
-    "script": "{{user `shell_path`}}/basic.sh"
+    "script": "{{user `shell_path`}}/[script name].sh"
   }]
 }
 ```
