@@ -24,3 +24,4 @@
     "run_list": ["recipe[BL-1::root]", "recipe[BL-1::loggly]"]
   }]
 }
+
