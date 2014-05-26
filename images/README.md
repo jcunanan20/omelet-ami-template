@@ -77,7 +77,7 @@ Omelet AMI Template Images
     - [Test-shell script](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/shell/TEST-1/basic.sh)                    
 
 
-- how to use Packer to debug recipes temporary: 
+## How to use Packer to debug recipes temporary: 
 ```
 packer build -var 'ami_name=<your ami name>' -var 'aws_access_key=<aws key>' -var 'aws_secret_key=<aws secret key>' -var 'region=<region>' -var 'source_ami=ami-6ef51d06' -var 'cookbook_path=/your/omelet/project/omelet-ami-template/cookbooks/' /your/omelet/project/omelet-ami-template/images/BL-1/BL-1.json
 ```
