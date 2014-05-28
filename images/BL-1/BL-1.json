@@ -4,7 +4,7 @@
     "aws_secret_key": "",
     "source_ami": "",
     "region": "",
-    "ami_name": "",
+    "ami_name": "ubuntu/images/ebs/ubuntu-trusty-14.04-amd64-server-20140416.1",
     "cookbook_path": ""
   },
   "builders": [{
