@@ -22,8 +22,7 @@
     "type": "chef-solo",
     "cookbook_paths": ["{{user `cookbook_path`}}"],
     "run_list": [
-	"recipe[BL-1::root]",
-	"recipe[BL-1::test]"
+	"recipe[BL-1::root]"
     ]
   }]
 }
