@@ -6,7 +6,7 @@
     "region": "",
     "ami_name": "",
     "cookbook_path": "",
-    "source_ami_name": "ubuntu/images/ebs/ubuntu-trusty-14.04-amd64-server-20140416.1"
+    "source_ami_name": "BL-1 Raw"
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -15,7 +15,7 @@
     "region": "{{user `region`}}",
     "source_ami": "{{user `source_ami`}}",
     "instance_type": "t1.micro",
-    "ssh_username": "ubuntu",
+    "ssh_username": "root",
     "ami_name": "{{user `ami_name`}}"
   }],
   "provisioners": [{
