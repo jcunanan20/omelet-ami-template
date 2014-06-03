@@ -6,7 +6,7 @@
     "region": "",
     "ami_name": "",
     "cookbook_path": "",
-    "source_ami_name": "BL-1 Raw"
+    "source_ami_name": "BL-1 Raw",
   },
   "builders": [{
     "type": "amazon-ebs",
