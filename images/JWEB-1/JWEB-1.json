@@ -22,6 +22,8 @@
     "type": "chef-solo",
     "cookbook_paths": ["{{user `cookbook_path`}}"],
     "run_list": [
+	"recipe[JWEB-1::jdk]",
+	"recipe[JWEB-1::tomcat]",
 	"recipe[BL-1::root]"
     ]
   }]
