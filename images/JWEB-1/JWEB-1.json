@@ -6,6 +6,7 @@
     "region": "",
     "ami_name": "",
     "cookbook_path": "",
+    "description": "Java web app image",
     "source_ami_name": "BL-1"
   },
   "builders": [{
