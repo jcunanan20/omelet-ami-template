@@ -1,0 +1,29 @@
+{ 
+  "variables": {
+    "aws_access_key": "", 
+    "aws_secret_key": "",
+    "source_ami": "",
+    "region": "",
+    "ami_name": "",
+    "cookbook_path": "",
+    "description": "DCS Omnibus image",
+    "source_ami_name": "JWEB-1"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "{{user `region`}}",
+    "source_ami": "{{user `source_ami`}}",
+    "instance_type": "t1.micro",
+    "ssh_username": "root",
+    "ami_name": "{{user `ami_name`}}"
+  }],
+  "provisioners": [{
+    "type": "chef-solo",
+    "cookbook_paths": ["{{user `cookbook_path`}}"],
+    "run_list": [
+	"recipe[BL-1::root]"
+    ]
+  }]
+}
