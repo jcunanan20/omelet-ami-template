@@ -6,6 +6,7 @@
     "region": "",
     "ami_name": "",
     "cookbook_path": "",
+    "description": "Python Django web app image",
     "source_ami_name": "BL-1"
   },
   "builders": [{
