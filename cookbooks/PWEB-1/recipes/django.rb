@@ -8,7 +8,7 @@
 #
 
 remote_file "#{Chef::Config['file_cache_path']}/epel-release-6-8.noarch.rpm" do
-  source "http://mirror-fpt-telecom.fpt.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm"
+  source "https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm"
   action :create_if_missing
 end
 
