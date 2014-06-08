@@ -7,7 +7,7 @@
     "ami_name": "",
     "cookbook_path": "",
     "description": "Python Django web app image",
-    "source_ami_name": "DCS-Omnibus-1"
+    "source_ami_name": "BL-1"
   },
   "builders": [{
     "type": "amazon-ebs",
