@@ -7,7 +7,7 @@
     "ami_name": "",
     "cookbook_path": "",
     "description": "DCS Omnibus image",
-    "source_ami_name": "CC-1"
+    "source_ami_name": "JWEB-1"
   },
   "builders": [{
     "type": "amazon-ebs",
