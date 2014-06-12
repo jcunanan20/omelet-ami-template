@@ -30,6 +30,7 @@
 	"recipe[BL-1::extrapkgs]",
 	"recipe[BL-1::dnsclient]",
 	"recipe[BL-1::snmpd]",
+	"recipe[BL-1::iptables]",
 	"recipe[BL-1::root]"
     ]
   }]
