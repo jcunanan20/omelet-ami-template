@@ -55,6 +55,7 @@ Omelet AMI Template Images
     "region": "",
     "ami_name": "",
     "shell_path": "",
+    "description": "[image description (optional)]",
     "source_ami_name": "[source ami name]"
   },
   "builders": [{
@@ -75,7 +76,7 @@ Omelet AMI Template Images
 ```
 
 - Example:
-    - [Test-shell.json](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/images/BL-1/TEST-shell/TEST-shell.json) 
+    - [Test-shell.json](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/images/TEST-shell/TEST-shell.json) 
     - [Test-shell script](https://github.com/TrendMicroDCS/omelet-ami-template/blob/master/shell/TEST-shell/basic.sh) 
 
 
