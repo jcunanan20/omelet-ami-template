@@ -16,6 +16,7 @@ Omelet AMI Template Images
     "region": "",
     "ami_name": "",
     "cookbook_path": "",
+    "description": "[image description (optional)]",
     "source_ami_name": "[source ami name]"
   },
   "builders": [{
